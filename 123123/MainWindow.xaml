@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Среднее арифметическое и максимальное число" Height="350" Width="350">
+    <DockPanel LastChildFill="True" VerticalAlignment="Top" Margin="10">
+        <Label Content="Введите a:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="texta" DockPanel.Dock="Top"/>
+        <Label Content="Введите b:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="textb" DockPanel.Dock="Top"/>
+        <Label Content="Введите c" DockPanel.Dock="Top"/>
+        <TextBox x:Name="textc" DockPanel.Dock="Top"/>
+        <Label Content="Введите d" DockPanel.Dock="Top"/>
+        <TextBox x:Name="textd" DockPanel.Dock="Top"/>
+        <Button Content="Вычислить среднее арифметическое" DockPanel.Dock="Top" Click="ButtonBase_OnClick1"/>
+        <Button Content="Определить максимальное из введенных чисел" DockPanel.Dock="Top" Click="ButtonBase_OnClick2"/>
+        <TextBlock x:Name="Result" DockPanel.Dock="Bottom"/>
+    </DockPanel>
+</Window>
